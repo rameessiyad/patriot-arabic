@@ -38,35 +38,49 @@
     </div>
 
     <!-- header -->
-    <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
+    <header dir="rtl" class="lg:bg-black/40 lg:backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
         <div class="header-content w-full max-w-full md:max-w-[93%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
-                <nav class="ml-3 hidden lg:block">
-                     <ul class="nav-items flex items-center gap-12">
-                        <li><a href="index.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">Home</a></li>
-                        <li><a href="about.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">About Us</a></li>
-                        <li><a href="service.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">Services</a></li>
-                        <li><a href="our-fleets.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">Our Fleets</a></li>
-                        <li><a href="career.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">Career</a></li>
-                        <li><a href="blog.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">Blogs</a></li>
-                        <li><a href="contact.html" class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">Contact Us</a></li>
+                <nav class="ml-3 hidden xl:block">
+                    <ul class="nav-items flex items-center gap-12">
+                        <li><a href="index.html"
+                                class="nav-item hover:text-[var(--color-primary)] hover:bg-transparent text-xs xl:text-base">اتصل
+                                بنا</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">الصفحة
+                                الرئيسية</a>
+                        </li>
+                        <li><a href="service.html"
+                                class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">حياة مهنية</a>
+                        </li>
+                        <li><a href="our-fleets.html"
+                                class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">مركباتنا</a>
+                        </li>
+                        <li><a href="career.html"
+                                class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">الخدمات</a></li>
+                        <li><a href="blog.html"
+                                class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">من نحن</a></li>
+                        <li><a href="contact.html"
+                                class="nav-item hover:text-[var(--color-primary)] text-xs xl:text-base">وظيفة</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <!-- hamburger icon -->
             <img id="hamburger-icon" src="./assets/svg-icons/hamburger.svg" alt="menu-icon"
-                class="block lg:hidden cursor-pointer">
+                class="block xl:hidden cursor-pointer">
 
             <!-- close icon -->
             <img id="close-icon" src="./assets/svg-icons/close-icon.svg" alt="close-icon"
-                class="hidden lg:hidden cursor-pointer">
+                class="hidden xl:hidden cursor-pointer">
 
-            <div class="hidden lg:block">
+            <div class="hidden xl:block">
                 <div class="flex items-center gap-5">
                     <div class="flex items-center gap-1 px-2 py-1">
                         <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
-                        <span class="text-base text-white font-light cursor-pointer">EN</span>
+                        <span class="text-base text-white font-light cursor-pointer">العربية</span>
                     </div>
                     <!-- <button
                         class="header-button px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
@@ -74,7 +88,7 @@
                     </button> -->
                     <button
                         class="header-button px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
-                        <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
+                        <span class="inline-block transition-transform duration-300 hover:scale-110">احجز الآن</span>
                     </button>
                 </div>
             </div>

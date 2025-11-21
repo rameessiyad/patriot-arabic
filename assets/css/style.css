@@ -690,42 +690,49 @@ header {
 }
 
 .our-mission-card-container {
-    /* background-color: red; */
-    /* width: fit-content; */
     width: 400px;
     height: 150px;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    /* FLIPPED */
     position: relative;
+    direction: rtl;
+    /* IMPORTANT */
 
     .top-div {
-        /* background-color: green; */
         height: 42%;
         width: 85.2%;
-        margin-left: auto;
-        border-top-left-radius: 20px;
+        margin-right: auto;
+        /* FLIPPED */
+        border-top-right-radius: 20px;
+        /* FLIPPED */
         border-top: 1.5px solid rgba(255, 255, 255, 0.5);
 
         h3 {
             color: #fff;
             font-size: 1.5rem;
-            padding-left: 10px;
+            padding-right: 10px;
+            /* FLIPPED */
             font-weight: 400;
             margin-top: 14px;
+            text-align: right;
+            /* ARABIC */
         }
     }
 
     .bottom-div {
         height: 58%;
         width: 100%;
-        /* background-color: blue; */
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        /* FLIPPED */
+        border-bottom-right-radius: 20px;
+        /* FLIPPED */
         border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
-        border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+        border-right: 1.5px solid rgba(255, 255, 255, 0.5);
+        /* FLIPPED */
 
         p {
             color: #fff;
@@ -733,29 +740,35 @@ header {
             font-size: 0.8rem;
             margin-top: 0;
             font-weight: lighter;
+            text-align: right;
+            /* ARABIC */
         }
     }
-
 }
 
+/* FLIP THE DECORATIVE ::AFTER BOX */
 .our-mission-card-container::after {
     content: "";
     position: absolute;
     width: 2.8rem;
     height: 3.1rem;
-    /* background-color: red; */
     top: 0.9rem;
-    left: 1rem;
-    border-bottom-right-radius: 12px;
+    right: 1rem;
+    /* FLIPPED (was left) */
+    border-bottom-left-radius: 12px;
+    /* FLIPPED */
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
-    border-right: 0.5px solid rgba(255, 255, 255, 0.2);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+    /* FLIPPED */
 }
 
+/* FLIP ICON POSITION */
 .our-mission-card-container {
     .icon {
         position: absolute;
         top: 3px;
-        left: 3px;
+        right: 3px;
+        /* FLIPPED */
         width: 50px;
         height: 50px;
         padding: 1px;
@@ -768,6 +781,7 @@ header {
     }
 }
 
+/* HOVER EFFECTS (NO CHANGE NEEDED) */
 .our-mission-card-container:hover {
     .top-div {
         background: rgba(255, 255, 255, 0.1);
@@ -1761,6 +1775,12 @@ footer {
 @media screen and (min-width: 600px) and (max-width: 769px) {
     .ourFleetNav {
         top: 170px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .ourFleetNav {
+        top: 190px;
     }
 }
 

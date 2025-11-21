@@ -965,19 +965,22 @@ footer {
         position: absolute;
         width: 2.8rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 0.9rem;
-        left: 1rem;
-        border-bottom-right-radius: 12px;
+        right: 1rem;
+        /* FLIPPED (was left) */
+        border-bottom-left-radius: 12px;
+        /* FLIPPED */
         border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
-        border-right: 0.5px solid rgba(255, 255, 255, 0.35);
+        border-left: 0.5px solid rgba(255, 255, 255, 0.35);
+        /* FLIPPED */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 3px;
-            left: 14px;
+            right: 14px;
+            /* FLIPPED (was left) */
             width: 50px;
             height: 50px;
             padding: 1px;
@@ -989,6 +992,7 @@ footer {
             }
         }
     }
+
 
     .our-mission-card-container:hover {
         .top-div {
@@ -1019,42 +1023,48 @@ footer {
 
 @media screen and (max-width:1000px) and (min-width:930px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* FLIPPED */
         position: relative;
+        direction: rtl;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 91.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* FLIPPED */
+            border-top-right-radius: 20px;
+            /* FLIPPED */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* FLIPPED */
                 font-weight: 400;
                 margin-top: 14px;
+                text-align: right;
+                /* RTL */
             }
         }
 
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* FLIPPED */
+            border-bottom-right-radius: 20px;
+            /* FLIPPED */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* FLIPPED */
 
             p {
                 color: #fff;
@@ -1062,9 +1072,10 @@ footer {
                 font-size: 0.8rem;
                 margin-top: 0;
                 font-weight: lighter;
+                text-align: right;
+                /* RTL */
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -1072,19 +1083,22 @@ footer {
         position: absolute;
         width: 3.7rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.8rem;
-        border-bottom-right-radius: 14px;
+        right: 0.8rem;
+        /* FLIPPED */
+        border-bottom-left-radius: 14px;
+        /* FLIPPED */
         border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* FLIPPED */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 10px;
-            left: -12px;
+            right: -12px;
+            /* FLIPPED */
             width: 48px;
             height: 48px;
             padding: 1px;
@@ -1096,46 +1110,53 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width:930px) and (min-width:917px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* FLIPPED */
         position: relative;
+        direction: rtl;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 91.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* FLIPPED */
+            border-top-right-radius: 20px;
+            /* FLIPPED */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* FLIPPED */
                 font-weight: 400;
                 margin-top: 14px;
+                text-align: right;
+                /* RTL */
             }
         }
 
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* FLIPPED */
+            border-bottom-right-radius: 20px;
+            /* FLIPPED */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* FLIPPED */
 
             p {
                 color: #fff;
@@ -1143,9 +1164,10 @@ footer {
                 font-size: 0.8rem;
                 margin-top: 0;
                 font-weight: lighter;
+                text-align: right;
+                /* RTL */
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -1153,19 +1175,22 @@ footer {
         position: absolute;
         width: 3.7rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.8rem;
-        border-bottom-right-radius: 14px;
+        right: 0.8rem;
+        /* FLIPPED */
+        border-bottom-left-radius: 14px;
+        /* FLIPPED */
         border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* FLIPPED */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 10px;
-            left: -1px;
+            right: -1px;
+            /* FLIPPED */
             width: 48px;
             height: 48px;
             padding: 1px;
@@ -1177,47 +1202,54 @@ footer {
             }
         }
     }
+
 }
 
 
 @media screen and (max-width:916px) and (min-width:900px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* FLIPPED */
         position: relative;
+        direction: rtl;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 91.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* FLIPPED */
+            border-top-right-radius: 20px;
+            /* FLIPPED */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* FLIPPED */
                 font-weight: 400;
                 margin-top: 14px;
+                text-align: right;
+                /* RTL */
             }
         }
 
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* FLIPPED */
+            border-bottom-right-radius: 20px;
+            /* FLIPPED */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* FLIPPED */
 
             p {
                 color: #fff;
@@ -1225,9 +1257,10 @@ footer {
                 font-size: 0.8rem;
                 margin-top: 0;
                 font-weight: lighter;
+                text-align: right;
+                /* RTL */
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -1235,19 +1268,22 @@ footer {
         position: absolute;
         width: 3.57rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.8rem;
-        border-bottom-right-radius: 14px;
+        right: 0.8rem;
+        /* FLIPPED */
+        border-bottom-left-radius: 14px;
+        /* FLIPPED */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.35);
+        /* FLIPPED */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 10px;
-            left: 10px;
+            right: 10px;
+            /* FLIPPED */
             width: 48px;
             height: 48px;
             padding: 1px;
@@ -1259,46 +1295,53 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width:900px) and (min-width:840px) {
     .our-mission-card-container {
         /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 91.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
+                text-align: right;
+                /* optional flip */
             }
         }
 
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -1306,29 +1349,34 @@ footer {
                 font-size: 0.8rem;
                 margin-top: 0;
                 font-weight: lighter;
+                text-align: right;
+                /* optional flip */
             }
         }
-
     }
+
 
     .our-mission-card-container::after {
         content: "";
         position: absolute;
         width: 3.57rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.8rem;
-        border-bottom-right-radius: 14px;
+        right: 0.8rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.35);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 10px;
-            left: 10px;
+            right: 10px;
+            /* flipped */
             width: 48px;
             height: 48px;
             padding: 1px;
@@ -1344,42 +1392,47 @@ footer {
 
 @media screen and (max-width:840px) and (min-width:810px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 91.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
+                text-align: right;
+                /* flipped */
             }
         }
 
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -1387,29 +1440,34 @@ footer {
                 font-size: 0.8rem;
                 margin-top: 0;
                 font-weight: lighter;
+                text-align: right;
+                /* flipped */
             }
         }
-
     }
+
 
     .our-mission-card-container::after {
         content: "";
         position: absolute;
         width: 3.3rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.8rem;
-        border-bottom-right-radius: 14px;
+        right: 0.8rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.35);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 10px;
-            left: 2px;
+            right: 2px;
+            /* flipped */
             width: 48px;
             height: 48px;
             padding: 1px;
@@ -1425,29 +1483,30 @@ footer {
 
 @media screen and (max-width:810px) and (min-width:768px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 91.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -1456,11 +1515,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -1470,7 +1531,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -1478,19 +1538,22 @@ footer {
         position: absolute;
         width: 3rem;
         height: 3.1rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.75rem;
-        border-bottom-right-radius: 14px;
+        right: 0.75rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.35);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 10px;
-            left: 16px;
+            right: 16px;
+            /* flipped */
             width: 44px;
             height: 44px;
             padding: 1px;
@@ -1502,6 +1565,7 @@ footer {
             }
         }
     }
+
 }
 
 
@@ -2083,29 +2147,30 @@ footer {
 
 @media screen and (max-width: 450px) and (min-width: 420px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: 150px;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 84.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 2px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.5rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -2114,11 +2179,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -2128,7 +2195,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2136,19 +2202,22 @@ footer {
         position: absolute;
         width: 3rem;
         height: 3.2rem;
-        /* background-color: red; */
         top: 0.8rem;
-        left: 0.8rem;
-        border-bottom-right-radius: 14px;
+        right: 0.8rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.38);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.38);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.38);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 3px;
-            left: -4px;
+            right: -4px;
+            /* flipped */
             width: 50px;
             height: 50px;
             padding: 1px;
@@ -2160,6 +2229,7 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -2191,52 +2261,46 @@ footer {
 
 @media screen and (max-width: 420px) and (min-width: 400px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 90%;
         height: fit-content;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green;  */
             height: 42%;
             width: 82.6%;
-            margin-left: auto;
-            border-top-left-radius: 15px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 15px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
-                color: #fff;
-                font-size: 1.2rem;
-                padding-left: 10px;
-                font-weight: 400;
-                margin-top: 14px;
+                padding-right: 10px;
+                /* flipped */
             }
         }
 
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
-                color: #fff;
                 padding: 6px 3px;
-                font-size: 0.8rem;
-                margin-top: 0;
-                font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2244,19 +2308,22 @@ footer {
         position: absolute;
         width: 2.938rem;
         height: 1.6rem;
-        /* background-color: red; */
         top: 0.9rem;
-        left: 0.7rem;
-        border-bottom-right-radius: 14px;
+        right: 0.7rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 1.6px solid rgba(255, 255, 255, 0.1);
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: -4px;
-            left: 11px;
+            right: 11px;
+            /* flipped */
             width: 32px;
             height: 50px;
             padding: 1px;
@@ -2268,33 +2335,35 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 400px) and (min-width: 375px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: fit-content;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 84.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.2rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -2303,11 +2372,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 18px;
-            border-bottom-left-radius: 18px;
+            border-top-right-radius: 18px;
+            /* flipped */
+            border-bottom-right-radius: 18px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -2317,7 +2388,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2325,19 +2395,22 @@ footer {
         position: absolute;
         width: 2.4rem;
         height: 1.4rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 1.02rem;
-        border-bottom-right-radius: 14px;
+        right: 1.02rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.1);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.1);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.1);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 5px;
+            right: 5px;
+            /* flipped */
             width: 40px;
             height: 34px;
             padding: 1px;
@@ -2349,33 +2422,35 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 375px) and (min-width: 365px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: fit-content;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 84.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.2rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -2384,11 +2459,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 18px;
-            border-bottom-left-radius: 18px;
+            border-top-right-radius: 18px;
+            /* flipped */
+            border-bottom-right-radius: 18px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -2398,7 +2475,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2406,19 +2482,22 @@ footer {
         position: absolute;
         width: 2.2rem;
         height: 1.2rem;
-        /* background-color: red; */
         top: 1.2rem;
-        left: 1.08rem;
-        border-bottom-right-radius: 14px;
+        right: 1.08rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.2);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 6px;
+            right: 6px;
+            /* flipped */
             width: 40px;
             height: 34px;
             padding: 1px;
@@ -2430,33 +2509,35 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 367px) and (min-width: 350px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: fit-content;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 84.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.2rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -2465,11 +2546,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -2479,7 +2562,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2487,19 +2569,22 @@ footer {
         position: absolute;
         width: 2rem;
         height: 1.3rem;
-        /* background-color: red; */
         top: 1.1rem;
-        left: 1.15rem;
-        border-bottom-right-radius: 14px;
+        right: 1.15rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.2);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 8px;
+            right: 8px;
+            /* flipped */
             width: 34px;
             height: 34px;
             padding: 1px;
@@ -2511,6 +2596,7 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -2542,29 +2628,30 @@ footer {
 
 @media screen and (max-width: 350px) and (min-width: 330px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: fit-content;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 84.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.2rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -2573,11 +2660,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -2587,7 +2676,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2595,19 +2683,22 @@ footer {
         position: absolute;
         width: 2.4rem;
         height: 1.5rem;
-        /* background-color: red; */
         top: 1rem;
-        left: 0.65rem;
-        border-bottom-right-radius: 14px;
+        right: 0.65rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.2);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 8px;
+            right: 8px;
+            /* flipped */
             width: 34px;
             height: 34px;
             padding: 1px;
@@ -2619,33 +2710,35 @@ footer {
             }
         }
     }
+
 }
 
 @media screen and (max-width: 330px) {
     .our-mission-card-container {
-        /* background-color: red; */
-        /* width: fit-content; */
         width: 100%;
         height: fit-content;
         border-radius: 20px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        /* flipped */
         position: relative;
 
         .top-div {
-            /* background-color: green; */
             height: 42%;
             width: 84.5%;
-            margin-left: auto;
-            border-top-left-radius: 20px;
+            margin-right: auto;
+            /* flipped */
+            border-top-right-radius: 20px;
+            /* flipped */
             border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
                 font-size: 1.2rem;
-                padding-left: 10px;
+                padding-right: 10px;
+                /* flipped */
                 font-weight: 400;
                 margin-top: 14px;
             }
@@ -2654,11 +2747,13 @@ footer {
         .bottom-div {
             height: 58%;
             width: 100%;
-            /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* flipped */
+            border-bottom-right-radius: 20px;
+            /* flipped */
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            /* flipped */
 
             p {
                 color: #fff;
@@ -2668,7 +2763,6 @@ footer {
                 font-weight: lighter;
             }
         }
-
     }
 
     .our-mission-card-container::after {
@@ -2676,19 +2770,22 @@ footer {
         position: absolute;
         width: 1.8rem;
         height: 1.35rem;
-        /* background-color: red; */
         top: 1.05rem;
-        left: 1.05rem;
-        border-bottom-right-radius: 14px;
+        right: 1.05rem;
+        /* flipped */
+        border-bottom-left-radius: 14px;
+        /* flipped */
         border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-left: 0.3px solid rgba(255, 255, 255, 0.2);
+        /* flipped */
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 8px;
+            right: 8px;
+            /* flipped */
             width: 34px;
             height: 34px;
             padding: 1px;
@@ -2700,4 +2797,5 @@ footer {
             }
         }
     }
+
 }
